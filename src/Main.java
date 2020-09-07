@@ -14,15 +14,15 @@ public class Main{
         Person d = new Administration("Jonas", "141179-2481", employees);
         Person e = new Instructors("Janus", "261200-1871", 20,  employees);
 
-        //Printer info om members
+        //Prints info on members
         Members.Print(members);
         System.out.println("\n");
 
-        //Printer info om de employees
+        //Prints info on employees
         Administration.Print(employees);
         System.out.println("\n");
 
-        //Printer name og cpr på employees og members
+        //Prints name & cpr on employees & members
         employees.addAll(members);
         Person.Print(employees);
     }

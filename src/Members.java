@@ -13,6 +13,7 @@ public class Members extends Person {
             this.fee = 299;
         }
     }
+
     public static void Print(ArrayList<Person> tpA){
         System.out.println("\t \t \t \t *** MEMBERS ***");
         System.out.println("Name\t \tCPR\t \t \t \tMembership\t \tFee");

@@ -12,6 +12,7 @@ public class Person {
         this.cpr = cpr;
         tpA.add(this);
     }
+    
     public static void Print(ArrayList<Person> tpA){
         System.out.println("\t \t \t \t *** ALL ****");
         System.out.println("Name\t \t CPR");

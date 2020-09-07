@@ -5,14 +5,12 @@ public class Administration extends Person {
     protected int vacation;
     protected int hours;
 
-
     public Administration(String name, String cpr, ArrayList<Person> tpA) {
         super(name, cpr, tpA);
         this.salary = 33000;
         this.vacation = 5;
         this.hours = 37;
     }
-
 
     public static void Print(ArrayList<Person> tpA){
         System.out.println("\t \t \t \t *** EMPLOYEES ****");
