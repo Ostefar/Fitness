@@ -4,8 +4,8 @@ public class Members extends Person {
     protected String membership;
     protected int fee;
 
-    public Members(String name, String CPR, String membership, ArrayList<Person> tpA) {
-        super(name, CPR, tpA);
+    public Members(String name, String cpr, String membership, ArrayList<Person> tpA) {
+        super(name, cpr, tpA);
         this.membership = membership;
         if(membership.equals("basic")){
             this.fee = 199;
@@ -13,7 +13,7 @@ public class Members extends Person {
             this.fee = 299;
         }
     }
-    public static void PrintAll(ArrayList<Person> tpA){
+    public static void Print(ArrayList<Person> tpA){
         System.out.println("\t \t \t \t *** MEMBERS ***");
         System.out.println("Name\t \tCPR\t \t \t \tMembership\t \tFee");
         System.out.println("******************************************************");
@@ -26,6 +26,6 @@ public class Members extends Person {
 
     @Override
     public String toString() {
-        return (name+"\t \t"+ cpr + "\t \t"+membership+"\t \t \t"+fee);
+        return (name+"\t \t"+ cpr + "\t \t"+membership+"\t \t \t"+fee+",-");
     }
 }
